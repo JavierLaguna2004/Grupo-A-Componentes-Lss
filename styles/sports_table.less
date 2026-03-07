@@ -1,0 +1,26 @@
+@import "variables.less";
+
+.sports-table-section {
+    padding: 2rem 0;
+    .sports-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: @content-primary-background;
+        color: @content-primary-text;
+        th, td {
+            border: 1px solid @primary-separtor-color;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: @primary-background-color;
+            color: @primary-text-color;
+        }
+        tr:nth-child(even) {
+            background-color: darken(@content-primary-background, 5%);
+        }
+        tr:hover {
+            background-color: darken(@content-primary-background, 10%);
+        }
+    }
+}

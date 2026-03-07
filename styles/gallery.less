@@ -1,0 +1,19 @@
+@import "variables.less";
+
+.gallery-section {
+    padding: 2rem 0;
+    .gallery-item {
+        background-color: @content-primary-background;
+        color: @content-primary-text;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+        figcaption {
+            text-align: center;
+            font-weight: bold;
+            padding: 0.5rem;
+        }
+    }
+}
