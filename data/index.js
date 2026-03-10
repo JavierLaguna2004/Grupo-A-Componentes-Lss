@@ -7,9 +7,9 @@ const getData = (page) => {
                 "hero-title": "Bienvenido",
                 "hero-text": "Soluciones digitales para tu negocio",
                 "cards": [
-                    { "card-title": "Rápido", "card-text": "Carga instantánea", "card-icon": "⚡" },
-                    { "card-title": "Seguro", "card-text": "Datos protegidos", "card-icon": "🔒" },
-                    { "card-title": "Escalable", "card-text": "Crece sin límites", "card-icon": "📈" }
+                    { "card-title": "Rápido", "card-text": "Carga instantánea", "card-icon": "" },
+                    { "card-title": "Seguro", "card-text": "Datos protegidos", "card-icon": "" },
+                    { "card-title": "Escalable", "card-text": "Crece sin límites", "card-icon": "" }
                 ],
                 "half-title": "Nuestra Historia",
                 "half-text": "Somos un equipo dedicado a crear experiencias digitales excepcionales.",

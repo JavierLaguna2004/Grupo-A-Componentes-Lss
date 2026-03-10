@@ -1,9 +1,50 @@
 @import "variables.less";
-.cards-section { padding: 2rem; }
+.cards-section {
+    padding: 2rem;
+    background: @primary-bg; // morado oscuro de fondo
+}
+
 .card {
-    background: @content-bg; color: @content-text;
-    padding: 1.5rem; text-align: center;
-    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
-    h3 { margin: 0.5rem 0; }
-    p { margin: 0; color: darken(@content-text, 20%); }
+    background: @content-bg;  // gris claro
+    color: @content-text;      // texto oscuro
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: @primary-bg; // color que contraste
+    }
+
+    h3 {
+        margin: 0.5rem 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        color: darken(@content-text, 20%);
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+}
+
+.cards-section .row {
+    display: flex;
+    flex-wrap: wrap;          // que las cards bajen a la siguiente línea si no caben
+    justify-content: center;  // centrado horizontal
+    gap: 1rem;                // espacio entre cards
+}
+
+@media (max-width: 768px) {
+    .col-4 { width: 100%; margin-bottom: 1rem; }
 }
